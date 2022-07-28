@@ -1,5 +1,4 @@
 export class Item {
-  [x: string]: any;
   name: string;
   sellIn: number;
   quality: number;
@@ -16,5 +15,8 @@ export class Item {
       this.quality < this.minimumQuality ? this.minimumQuality : this.quality;
     this.quality =
       this.quality > this.maximumQuality ? this.maximumQuality : this.quality;
+  }
+  updateItem() {
+    throw new Error("Method not implemented.");
   }
 }
